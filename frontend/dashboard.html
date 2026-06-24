@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SkillSwap Hub Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <h2>SkillSwap Hub</h2>
+
+    <div>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="browse.html">Browse</a>
+        <a href="profile.html">Profile</a>
+        <a href="requests.html">Requests</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="hero">
+        <h1>Welcome to SkillSwap Hub 🚀</h1>
+        <p>Connect, Learn and Exchange Skills with Others</p>
+    </div>
+
+    <div class="stats">
+
+        <div class="stat-card">
+            <h1 id="userCount">0</h1>
+            <p>Total Users</p>
+        </div>
+
+        <div class="stat-card">
+            <h1 id="requestCount">0</h1>
+            <p>Total Requests</p>
+        </div>
+
+        <div class="stat-card">
+            <h1 id="pendingCount">0</h1>
+            <p>Pending Requests</p>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">Available Users</h2>
+
+    <div id="users" class="user-grid"></div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

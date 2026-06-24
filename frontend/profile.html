@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div style="text-align:center; margin-top:10px; font-size:14px; color:gray;">
+  SkillSwap Hub — Connect, Learn & Share Skills
+</div>
+<nav>
+  <h2>SkillSwap Hub</h2>
+  <div>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="browse.html">Browse</a>
+    <a href="profile.html">Profile</a>
+    <a href="requests.html">Requests</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <div class="card">
+    <h2 id="name"></h2>
+    <small id="email"></small>
+
+    <input id="skills" placeholder="Skills (comma separated)">
+    <input id="bio" placeholder="Bio">
+
+    <button onclick="updateProfile()">Update Profile</button>
+  </div>
+
+</div>
+
+<script src="js/profile.js"></script>
+</body>
+</html>
