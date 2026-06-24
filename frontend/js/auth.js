@@ -1,9 +1,5 @@
 ﻿const API = "http://localhost:5000/api";
 
-if (localStorage.getItem("token") && (window.location.pathname.endsWith("login.html") || window.location.pathname.endsWith("register.html"))) {
-  window.location.href = "dashboard.html";
-}
-
 async function register() {
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
